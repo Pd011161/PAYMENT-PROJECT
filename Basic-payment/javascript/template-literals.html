@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // JS ES5
+        const fName= "\"Pd\""
+        console.log(fName)
+
+        // JS ES6
+        const lN = `"Ck"`
+        console.log(lN)
+        
+        // converse string
+        console.log(fName +' '+ lN) // '' และ +
+        console.log(`${fName} ${lN}`) // ${}
+
+        const x = "Hello"
+        const y = "PdCk!!!"
+        // const z = 22
+        const z = 31
+        let m = ``
+        
+        // Normal if
+        if(z<=30){
+            m = "m"
+        }else{
+            m = "M"
+        }
+
+
+
+
+        // JS ES5 
+        console.log("\""+x+' '+y+ "\"\n" // "\n"+ = Enter
+                    // "[ \"("")\" ]"
+                    // "[]" = ทำให้ทั้งหมดใน[]เป็นstring
+                    // \"()\" = ทำให้ไม่สนใจability symbolใน()
+                    // \"("")\" = "" โดยที่ สามารถทำให้ "" เป็น string
+                    +'age '+z+"\n" // "\n"+ = Enter
+                    +"Men")
+        
+        //JS ES6 
+        console.log(`"${x} ${y}" \n age ${z}\n Men`)
+        
+        // การแสดงผลรวมโดยจัดระบบ ``
+        const full1 = `
+                                "${x} ${y}" 
+                                age ${z}
+                                Men
+                    ` 
+                 
+        const full2 = `
+                        <hr>
+                        <h1>"${x} ${y}"</h1>
+                        <br>
+                        age ${z} 
+                        <p> Men </p>
+                        ${m}
+                      ` 
+        // Shot-if
+        const full3 = `
+                        <hr>
+                        <h1>"${x} ${y}"</h1>
+                        <br>
+                        age ${z} 
+                        <p> Men </p>
+                        ${m} <br>
+                        ${z<=30?"z":"Z"} 
+                     ` 
+        console.log(full1)
+        document.write(full1) // "Hello Pdcl!!!" age22 Men
+        document.write(full2)
+        document.write(full3)
+
+        //shot-variable 
+        const a=10,
+              b=20,
+              c="C"
+              d="d"
+        document.write(`<br>
+        a=${a}, b=${b}, c=${c}, d=${d}
+        `)     
+        console.log(`a=${a}, b=${b}, c=${c}, d=${d}`)
+    </script>
+</body>
+</html>

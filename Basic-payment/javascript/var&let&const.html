@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //การประกาศตัวแปร 4 แบบ
+        //1) var
+        var nm = 'Pd'
+        var agen = 28
+        var ages = '28'
+        console.log(nm)
+        console.log('string:'+agen) /* ใช้ + ต่อstring เช่น X+Y = XY 
+                                        จะสังเกตได้ว่า agen จะถูกแปลง
+                                        type number ไปเป็น type string
+                                    */
+        console.log('num:',agen) // ใช้ , ต่อvariable เช่น X,Y = XY
+        console.log('string:',ages) // ใช้ , ต่อvariable เช่น X,Y = XY
+        console.log('DATA:',nm,agen) // ใช้ , ต่อvariable เช่น X,Y = XY
+        // var Problem # var = gobal variable
+        console.log("var Problem")
+        var age = 28
+        console.log(age) //28
+        {
+            var age = 24
+            console.log(age) //24
+        }
+        console.log(age) // 24
+        
+        //=======================================
+
+        //2) let Problem # local variable 
+        console.log("let Problem")
+        let n = 28
+        console.log(n) //28
+        {
+            let n = 24
+            console.log(n) //24
+        }
+        console.log(n) // 28
+
+       //=======================================
+
+        //3) const Problem # local variable 
+        console.log("const Problem")
+        const x = 28
+        console.log(x) //28
+        {
+            const x = 24
+            console.log(x) //24
+        }
+        // x = 1 // Uncaught TypeError
+        console.log(x) // 28
+        
+        //=======================================
+
+        //4) x Problem # grobal variable 
+        console.log("x Problem")
+        a = 28
+        console.log(a) //28
+        {
+            a = 24
+            console.log(a) //24
+        }
+        console.log(a) // 24
+        
+    </script>    
+
+
+</body>
+</html>

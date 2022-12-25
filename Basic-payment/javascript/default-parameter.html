@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // parameter problem
+        function x(name,age){ 
+            console.log("Hello "+name+""+age) // undefined
+         }
+         x('Pd!!!') // no input age
+        
+        // Edit parameter problem = Default parameter
+         function y(name,a=21){ 
+            console.log("Hello "+name+""+a) // Default age = 21 
+         }
+         y('Pd!!!')
+         
+         // Default parameter ถ้าใส่ inputมา != Default แต่จะ = input
+         function s(name,a=21){ 
+            console.log("Hello "+name+""+a) // input age = 1
+         }
+         s('Pd!!!',1)
+        
+    </script>
+</body>
+</html>
